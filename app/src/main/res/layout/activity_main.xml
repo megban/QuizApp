@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- QUESTION 1 -->
+        <TextView
+            style="@style/QuestionFormat"
+            android:text="1. What classes are offered at Branham?" />
+
+        <CheckBox
+            android:id="@+id/answer1ofQ1"
+            style="@style/AnswerFormat"
+            android:text="Dance" />
+
+        <CheckBox
+            android:id="@+id/answer2ofQ1"
+            style="@style/AnswerFormat"
+            android:text="Guitar" />
+
+        <CheckBox
+            style="@style/AnswerFormat"
+            android:text="AP Psychology" />
+
+        <CheckBox
+            android:id="@+id/answer3ofQ1"
+            style="@style/AnswerFormat"
+            android:text="Economics" />
+
+        <!-- QUESTION 2 -->
+        <TextView
+            style="@style/QuestionFormat"
+            android:text="2. The science building is next to the small gym. " />
+
+        <RadioButton
+            style="@style/AnswerFormat"
+            android:text="True" />
+
+        <RadioButton
+            android:id="@+id/answerofQ2"
+            style="@style/AnswerFormat"
+            android:text="False" />
+
+
+        <!-- QUESTION 3 -->
+        <TextView
+            style="@style/QuestionFormat"
+            android:text="3. Where will you find the guidance counselors?" />
+
+        <EditText
+            android:id="@+id/answerofQ3"
+            style="@style/AnswerFormat"
+            android:layout_marginRight="16dp"
+            android:hint="Write your answer here." />
+
+        <!-- QUESTION 4 -->
+        <TextView
+            style="@style/QuestionFormat"
+            android:text="4. What are the class colors?" />
+
+        <RadioButton
+            style="@style/AnswerFormat"
+            android:text="red, orange, green, blue" />
+
+        <RadioButton
+            android:id="@+id/answerofQ4"
+            style="@style/AnswerFormat"
+            android:text="orange, yellow, purple, blue" />
+
+        <RadioButton
+            style="@style/AnswerFormat"
+            android:text="orange, red, purple, blue" />
+
+        <RadioButton
+            style="@style/AnswerFormat"
+            android:text="red, green, pink, blue" />
+
+        <!-- QUESTION 5 -->
+        <TextView
+            style="@style/QuestionFormat"
+            android:text="5. What was the theme of Prom 2017?" />
+
+        <RadioButton
+            style="@style/AnswerFormat"
+            android:text="James Bond" />
+
+        <RadioButton
+            android:id="@+id/answerofQ5"
+            style="@style/AnswerFormat"
+            android:text="The Great Gatsby" />
+
+        <RadioButton
+            style="@style/AnswerFormat"
+            android:text="The Golden Hour" />
+
+        <RadioButton
+            style="@style/AnswerFormat"
+            android:text="Beach" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:onClick="Score"
+            android:text="Score Me"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/the_score_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textAllCaps="true"
+            android:textColor="#1A237E"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
